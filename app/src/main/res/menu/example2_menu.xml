@@ -3,11 +3,15 @@
 
     <item
         android:id="@+id/option_1"
-        android:title="Option 1"/>
+        android:title="Red"/>
 
     <item
         android:id="@+id/option_2"
-        android:title="Option 2"/>
+        android:title="Blue"/>
+
+    <item
+        android:id="@+id/option_3"
+        android:title="Default"/>
 
 
 
