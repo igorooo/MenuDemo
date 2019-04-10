@@ -50,12 +50,40 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-
-
-
-
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch(item.getItemId()){
+            case (R.id.item1):
+                setColor(textView,Color.RED);
+                setColor(textView1,Color.RED);
+                return true;
+            case (R.id.item2):
+                setColor(textView,Color.BLUE);
+                setColor(textView1,Color.BLUE);
+                return true;
+            case (R.id.item3):
+                setColor(textView,Color.GRAY);
+                setColor(textView1,Color.GRAY);
+                return true;
+            case (R.id.subitem1):
+                setItalicOrBold(textView,true,false);
+                setItalicOrBold(textView1,true,false);
+                return true;
+            case (R.id.subitem2):
+                setItalicOrBold(textView,false,false);
+                setItalicOrBold(textView1,false,false);
+                return true;
+            case (R.id.subitem3):
+                setItalicOrBold(textView,true,true);
+                setItalicOrBold(textView1,true,true);
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     private ActionMode.Callback mActionModeCallback = new ActionMode.Callback() {
         @Override

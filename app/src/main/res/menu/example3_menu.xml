@@ -3,15 +3,15 @@
     <item
         android:id="@+id/option_4"
         android:title="Italic"
-        android:icon="@drawable/ic_icon"/>
+        android:icon="@drawable/ic_italic"/>
 
     <item
         android:id="@+id/option_5"
         android:title="Bold"
-        android:icon="@drawable/ic_icon"/>
+        android:icon="@drawable/ic_bold"/>
 
     <item
         android:id="@+id/option_6"
         android:title="Reset"
-        android:icon="@drawable/ic_icon"/>
+        android:icon="@drawable/ic_default"/>
 </menu>
